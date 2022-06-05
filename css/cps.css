@@ -1,0 +1,142 @@
+body {
+    user-select: none;
+}
+
+.cpstest_startbtn { 
+    width: 30%;
+    position: absolute;
+    bottom: 0px;
+    left: 35%;
+    height: 10%;
+    
+    font-size: 30px;
+    color: rgb(200, 225, 200);
+    
+    border-radius: 50px;
+    border-style: solid;
+    background-color: rgb(124,180,210);
+}
+
+.cpstest_startbtn:focus {
+    border-color: white;
+    resize: none;
+    outline: none;
+    transform: scale(1);
+}
+
+.cpstest_startbtn_clicked {
+}
+
+.cpstest_startbtn_clicked:active {
+    transform: scale(1);
+    background-color: rgb(0,0,0);
+}
+
+.cpstest_clickbtn {
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    width: 50%;
+    height: 30%;
+    font-size: 30px;
+    position: absolute;
+    top: 3%;
+    left: 25%;
+    display: none;
+}
+
+.cpstest_clickbtn:focus {
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.cpstest_clickbtn_clicked {
+    background-color: rgb(0,0,0);
+}
+
+.cpstest_clickbtn_clicked:active {
+    background-color: rgb(66,66,66);
+}
+
+@keyframes cpstest_clicktexiao_anim {
+    0% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      transform: translate(0px, -30px);
+      -webkit-transform: translate(0px, -30px);
+    }
+    100% {
+      opacity: 0;
+    }
+    
+}
+
+.cpstest_clicktexiao {
+    user-select: none;
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    animation: cpstest_clicktexiao_anim 5s linear;
+}
+
+.cpstest_easter {
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: #fdfdfd;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: #fbfbfb;
+}
+
+.cpstest_easter:hover {
+    background-color: #dddddd;
+    color: #aaaacc;
+}
+
+#stop_btn {
+    border: none;
+    background-color: #ffffff;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    color: red;
+    display: none;
+}
+
+#stop_btn:focus {
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+#cps {
+    position: absolute;
+    top: 70%;
+    left: 0px;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 5px;
+    border: solid;
+    width: 100%;
+    color: rgb(50,50,170);
+    border-color: #b08040;
+    font-size: 30px;
+}
+
+#time_input {
+    border-radius: 10px;
+    border-color: #000000;
+    
+}
+
+#time_input {
+    outline: none;
+    padding-left: 3px;
+}

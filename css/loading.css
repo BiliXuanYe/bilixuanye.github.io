@@ -1,0 +1,132 @@
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    
+    animation: loading_smaller 2.0s linear infinite;
+    -webkit-animation: loading_smaller 2.0s linear infinite;
+}
+
+@keyframes loading_smaller {
+    30% {
+        height: 25px;
+        width: 25px;
+        transform: translateY(25px);
+    }
+    50% {
+        height: 25px;
+        width: 25px;
+        transform: translateY(25px);
+    }
+    100% {
+        height: 25px;
+        width: 25px;
+        transform: translateY(25px);
+    }
+}
+
+.block1 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-30px);
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    
+    animation: block1_animation 2.0s ease infinite;
+    -webkit-animation: block1_animation 2.0s ease infinite;
+}
+
+@keyframes block1_animation {
+    30% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-30px);
+    }
+    50% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translateY(0px);
+    }
+}
+.block2 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(25px, -30px);
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    
+    animation: block2_animation 2.0s ease infinite;
+    -webkit-animation: block2_animation 2.0s ease infinite;
+}
+
+@keyframes block2_animation {
+    30% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(25px, -30px);
+    }
+    50% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(25px, 25px);
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(25px, 25px);
+    }
+}
+.block3 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(25px, -30px);
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    
+    animation: block3_animation 2.0s ease infinite;
+    -webkit-animation: block3_animation 2.0s ease infinite;
+}
+
+@keyframes block3_animation {
+    50% {
+        opacity: 0.1;
+        top: 50%;
+        left: 50%;
+        transform: translate(25px, -30px);
+    }
+    80% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(25px, 0px);
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(25px, 0px);
+    }
+}

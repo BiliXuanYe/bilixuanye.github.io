@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width='256px' height='256px' xmlns='http://www.w3.org/2000/svg' version='1.1'>
+  <rect x='10%' y='14%' width='80%' height='10%' fill='#000000' rx='10px' ry='10px' ></rect>
+  <rect x='10%' y='47%' width='80%' height='10%' fill='#000000' rx='10px' ry='10px' ></rect>
+  <rect x='10%' y='76%' width='80%' height='10%' fill='#000000' rx='10px' ry='10px' ></rect>
+</svg>

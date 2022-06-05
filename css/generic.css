@@ -1,0 +1,261 @@
+@font-face {
+    font-family: ZoomlaCarved;
+    src: url("/res/fonts/ZoomlaCarved.ttf");
+}
+
+.nightable{}
+
+img.bg-img
+{
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    
+    z-index: 0;
+}
+
+body {
+    font-family: ZoomlaCarved;
+    left: 0;
+    right: 0;
+    transition: left 3s;
+}
+
+#night_mode {
+    z-index: 51;
+    user-select: none;
+    
+    position: fixed;
+    right: 5vw;
+    bottom: 5vw;
+    
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #bbbbbb;
+    
+    transition-property: background-color;
+    transition-duration: 2s;
+    
+    --active-bgcolor: #666666;
+}
+
+#night_mode:active {
+    background-color: var(--active-bgcolor);
+}
+
+img.icon_nightmode {
+    position: absolute;
+    left: 7.5px;
+    top: 7.5px;
+}
+
+blue-button {
+    content: none;
+    
+    border: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: #90c0ff;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    color: #eeeeee;
+    user-select: none;
+    
+    transition-property: background-color, box-shadow, color, border-color, opacity;
+    transition-duration: 2.5s, 190ms, 1.5s, 2s, 500ms;
+    transition-delay: 300ms, 0, 0, 300ms, 0;
+}
+
+blue-button::after {
+    content: attr(value);
+}
+
+blue-button:focus {
+    border-color: #aaaaaa;
+    outline: none;
+}
+
+blue-button:active {
+    box-shadow: 1px 1px 9px #999999;
+    background-color: #6090df;
+    border: 2px solid;
+    border-color: #7aaaef;
+    color: #ffffff;
+}
+
+blue-button.blue-button-night
+{
+    background-color: #667788;
+    color: #dddddd;
+}
+
+blue-button.blue-button-night:active
+{
+    box-shadow: 1px 1px 9px #eeeeee;
+    background-color: #444444;
+    border-color: #666666;
+}
+
+
+
+blue-textbox {
+    border: 3px solid #dddddd;
+    border-radius: 10vh;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    background-color: #ffffff;
+    
+    display: flex;
+    position: relative;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    transition-property: color, (border-color, background-color);
+    transition-duration: 1s, 2s;
+    transition-delay: 0, 300ms;
+}
+
+blue-textbox:focus
+{
+    box-shadow: 0 0 20px #a5b0e0;
+}
+
+blue-textbox.blue-textbox-night
+{
+    background: #888888;
+    border-color: #666666;
+    color: #dddddd;
+}
+
+
+
+progress-bar
+{
+    position: relative;
+    
+    width: 80%;
+    height: 5vh;
+    
+    background: transparent;
+    
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000000;
+    border-radius: 8vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+    
+    transition: all 1500ms;
+}
+
+
+
+#sidebar
+{
+    position: absolute;
+    content: url('/res/img/menu_icon.svg');
+    display: block;
+    right: 0;
+    top: 0;
+    z-index: 50;
+    width: 10vw;
+    height: 10vw;
+    
+    border-bottom-left-radius: 5px;
+    
+    transition: background-color 2s;
+}
+
+#sidebar:active
+{
+    background-color: #44444444;
+}
+
+
+
+#_root_container
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: transparent;
+    visibility: hidden;
+    
+    transition: all 1300ms;
+}
+
+#_sidebar_list
+{
+    position: fixed;
+    width: 40vw;
+    height: 100%;
+    top: 0;
+    right: -40vw;
+    
+    transition: all 1600ms;
+    z-index: 40;
+    background: #55555588;
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    color: #ffffff;
+}
+
+
+
+#_loading_screen
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 2s;
+}
+
+
+
+bottom-menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

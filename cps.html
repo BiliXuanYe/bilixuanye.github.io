@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title> CPS Test </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no; initial-scale=1.0;" />
+    <script src="/scripts/cps.js">
+    </script>
+    <link rel="stylesheet" href="/css/cps.css" type="text/css" />
+  </head>
+  <body>
+    <input id="cpstest_startbtn" type="button" value="开始" onclick="javascript:cpstest_start();" class="cpstest_startbtn cpstest_startbtn_clicked" />
+    <input id="cpstest_clickbtn" type="button" value="点!" onclick="javascript:cpstest_click();" class="cpstest_clickbtn cpstest_clickbtn_clicked" />
+    <p id="score" style="color:red; position:fixed; left:25%; top:50%; width:50%; height:20%; font-size:30px; text-align:center;">
+    得分: 还没测呢
+    </p>
+    <p id="time_display" style="color:red; position:fixed; left:0%; bottom:0%; width:100%; font-size:20px; text-align:center; display:none;">
+    剩余时间: 还没开始呢
+    </p>
+    <input type='button' id='stop_btn' value='直接结束' />
+    <input type='button' id="EASTEREgg" class='cpstest_easter' onclick='javascript:show_about();' value='I am an easter!' />
+    <p style="display:none; color:red; position:fixed; left:25%; top:60%; width:50%; height:20%; font-size:10px; text-align:center;">
+    历史记录(刷新后会消失):<br/>
+    </p>
+    <a id='cps' >
+    CPS: 还没测呢
+    </a>
+    <input id='time_input' placeholder='测试时间(默认为10000毫秒)' />
+  </body>
+<html>

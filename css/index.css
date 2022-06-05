@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'FangZhengPixel';
+    src: url('/fonts/FangZhengPixel.ttf');
+}
+
+body {
+    font-family: 'FangZhengPixel', '微软雅黑', '华文仿宋', sans;
+}
+
+.jumps {
+    position: relative;
+    color: green;
+    
+    animation: jump_animation 1.0s linear infinite;
+}
+
+@keyframes jump_animation {
+    30% {
+        
+    }
+    80% {
+        transform: translateY(-20px);
+    }
+    100% {
+        
+    }
+}
